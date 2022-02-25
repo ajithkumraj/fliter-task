@@ -1,0 +1,15 @@
+<br /><br />
+
+<div>
+  {{ today | date: 'EEEE, MMMM d, h:mm:ss' }}
+  {{ today | date: 'a' | lowercase }}
+</div>
+
+<br /><br />
+<button (click)="evenfilter()">filter</button><br /><br />
+<div *ngFor="let number of numbers">
+  <div>{{ number }}</div>
+  <select>
+    <option>{{ number }}</option>
+  </select>
+</div>
